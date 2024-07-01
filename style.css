@@ -1,0 +1,720 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection{
+    background-color: orangered;
+    color: white;
+}
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.main-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.main-para{
+    text-align: center;
+    font-size: 1.07em;
+    padding: 20px 30px;
+    color: gray;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 30px;
+}
+
+
+/* Header  */
+
+
+.Header{
+    width: 100%;
+    height: 100vh;
+    background-image:  linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(./Img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.Course-Header{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./Img/background.jpg);
+    background-position: 50% 110%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 50vh !important;
+}
+
+.Navbar{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 93%;
+}
+
+.logo{
+    width: 150px;
+    height: 40px;
+    vertical-align: middle;
+    margin-left: 5em;
+
+}
+
+.Nav-Iteams{
+    text-transform: uppercase;
+    flex: 1;
+    font-size: 0.8em;
+    margin-top: 30px;
+}
+
+.Nav-Iteams:first-child{
+     flex: 8;
+}
+
+.Nav-Iteams-mobile{
+    display: none;
+
+}
+
+
+
+.shower{
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding:  10px;
+    margin-right: 20px;
+    float: right;
+}
+
+.nav-hambuger-menu{
+    width: 80%;
+    height: 100vh;
+    background-color: orangered;
+    position: absolute;
+    right:  0;
+    top: 0px;
+    display: none;
+}
+
+.shower:focus + .nav-hambuger-menu{
+    display: block;
+}
+
+.Nav-Iteams-mobile-menu{
+    margin-top: 80px;   
+}
+
+.Nav-Iteams-mobile{
+    padding: 20px;
+    font-size: 1.1em;
+}
+
+
+.first-main-section-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 4.4rem;
+    text-align: center;
+    margin-top: 120px;
+    padding:  0 20px;
+}
+
+.course-main-heading{
+    font-size: 2.3em;
+}
+
+.first-main-section-para{
+    padding: 30px 60px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+
+.first-main-section-button{
+    margin: auto;
+    padding: 1.2rem 3rem;
+    background-color: transparent;
+    border: 2px solid white;
+    display: block;
+    color: white;
+    font-size: .9em;
+    cursor: pointer;
+    transition: all 1s;
+    margin-top: 20px;
+}
+
+.first-main-section-button:hover{
+    background-color: rgb(129, 188, 255);
+    border: 2px solid rgb(129, 188, 255);
+}
+
+
+/* .second-section start  */
+
+
+.box-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    margin-top: 40px;
+    background-color: #fff3f3;
+    border-radius: 20px;
+    width: 25%;
+    min-height: 400px;
+    transition: 0.4s linear;
+    
+}
+
+.box:hover{
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.816); 
+
+}
+
+.box-heading{
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 1.9em;
+    text-align: center;
+    color: rgb(50, 41, 41);
+}
+
+.box-para{
+    padding: 10px 20px 20px 10px;
+    font-size: 1.1em;
+    color: gray;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* third-section */
+
+.campus-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.campus{
+    width: 25%;
+    height: 400px;
+    background-position: cover;
+    background-position: center;
+    margin-top: 30px;   
+    border-radius: 20px;
+
+}
+
+.campus:nth-child(1){
+    background-image: url(./Img/london.png);
+}
+
+.campus:nth-child(2){
+    background-image: url(./Img/newyork.png);
+}
+
+.campus:nth-child(3){
+    background-image: url(./Img/washington.png);
+}
+
+.shadow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.238);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.1em;
+    display: none;
+    animation: red-diver .2s linear;
+}
+
+.campus:hover .shadow{
+    display: flex;
+}
+
+/* forth section  */
+.facilties-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    width: 28%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    margin-top: 30px !important;
+}
+
+.card-img{
+    width: 100%;
+    height: 45vh;
+}
+
+.card-heading{
+   font-size: 1.8em;
+   margin-top: 20px;
+}
+
+.card-para{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 29px;
+    color: gray;
+    word-spacing: 4px;
+
+}
+
+/* fifth-section  */
+
+.fifth-section{
+    min-height: 80vh;
+
+}
+
+.review-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.review{
+    background-color: #fff3f3;
+    padding: 40px ;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 35%;
+    min-height: 150px;
+    margin-top: 40px !important;
+}
+
+.review-inner-1{
+    display: flex;
+    /* align-items: center; */
+}
+
+.student{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.student-text{
+    color: gray;
+    font-size: 1.08em;
+    line-height: 24px;
+}
+
+.student-name{
+    margin-top: 30px;
+}
+
+/* six section */
+
+.six-section{
+    margin-top: 20px;
+    height: 80vh !important;
+}
+
+
+.banner{
+    height: 60vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(4, 9, 30, 0.355), rgba(4, 9, 30, 0.286)),url(./Img/banner2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    /* background-color: black; */
+}
+
+.banner-heading{
+    font-size: 2.6em;
+    color: white;
+    text-align: center;
+    margin-top: 40px;  
+    font-weight: bold;
+}
+
+.contact-us{
+    margin: auto;
+    padding: 1.2rem 3rem;
+    background-color: transparent;
+    border: 2px solid white;
+    display: block;
+    color: white;
+    font-size: .9em;
+    cursor: pointer;
+    transition: all 1s;
+    margin-top: 60px;
+}
+
+.contact-us:hover{
+    background-color: #7aa8ff;
+    border: #7aa8ff;
+}
+
+/* About section  part/  */
+.about-section-inner{
+    display: flex;
+    padding: 40px;
+}
+
+.about-section-1{
+    width: 50%;
+}
+
+.about-section-2{
+    width: 50%;
+}
+
+.about-section-heading{
+    padding: 20px 20px 20px 0;
+    font-size: 2.9em;
+    text-align: center;
+}
+
+.about-section-para{
+    padding: 10px 20px 20px 0px;
+    font-size: 1em;
+    color: gray;
+    word-spacing: 4px; text-align: center;
+}
+
+.about-img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.about-button{
+    color: orangered;
+    border: 2px solid orangered;
+    font-size: 1.2em;
+}
+
+.about-button:hover{
+    color: white;
+}
+
+/* blog section  */
+.blog-section{
+    display: flex;
+    padding: 40px;
+    width: 100%;
+}
+
+.blog-section-1{
+    width: 75%;
+    min-height: 400px;
+}
+
+.blog-section-2{
+    width: 25%;
+    min-height: 400px;
+    padding: 20px;
+}
+
+.blog-img{
+    width: 90%;
+    height: 80vh;
+    padding: 20px;
+    margin: auto;
+}
+
+.blog-heading{
+    padding: 20px;
+    font-size: 2em;
+}
+
+.blog-para{
+    padding: 20px 40px 20px 20px;
+    color: gray;
+}
+.blog-post-catagery{
+    background-color: orangered;
+    text-align: center;
+    color: white;
+}
+
+.post-catagery-list{
+    list-style-type: none;
+}
+
+.post-catagery-list-iteam{
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+.post-catagery-list-iteam-number{
+    float: right;
+    min-width: 30px;
+}
+
+/* .contact-us */
+
+.contact-us-section{
+    position: relative;
+}
+
+.map{
+    width: 80%;
+    height: 70vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 40px;
+}
+
+.contact-us-heading{
+    /* display: flex; */
+    text-align: center;
+}
+
+
+
+
+/* Footer  */
+
+.header-heading{
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.header-para{
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.creator-name{
+    color: blue;
+}
+
+
+
+@keyframes red-diver {
+    from{
+        height: 0px;
+    }
+    
+    to{
+        height: 100%;
+    }
+}
+
+@media screen and (min-width:851px) and (max-width:1000px) {
+    .Nav-Iteams:first-child{
+        flex: 5;
+   }
+}
+
+@media screen and (min-width:601px) and (max-width:850px) {
+    .Nav-Iteams:first-child{
+        flex: 4;
+   }
+
+   .logo{
+    width: 110px;
+    height: 30px;
+    margin-left: 2em;
+   }
+
+   .first-main-section-heading{
+    font-size: 2.5em;
+}
+
+   .box-container{
+    display: block;
+}
+    .box{
+        margin: auto;
+        width: 55%;
+        min-height: 400px;
+        margin-top: 20px;
+    }
+
+    .campus-section{
+        display: block;
+    }
+
+    .campus{
+        margin: auto;
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .review-section{
+        display: block;
+    }
+    .review{
+        margin: auto;
+        width: 80%;
+    }
+
+    .facilties-section{
+        display: block;
+    }
+    .card{
+        margin: auto;
+        width: 55%;
+    }
+
+    .banner-heading{
+        font-size: 2em;
+    }
+
+    .about-img{
+        width: 100%;
+        height: 80%;
+
+    }
+
+    .blog-section{
+        display: block;
+        margin-top: 40px;
+    }
+
+    .blog-section-1{
+        width: 100%;
+        min-height: 400px;
+    }
+    
+    .blog-section-2{
+        width: 100%;
+        min-height: 400px;
+        padding: 20px;
+    }
+
+    
+
+
+}
+
+@media screen  and (max-width:600px){
+    .Nav-Iteams-destop{
+        display: none;
+    }
+
+    .logo{
+        width: 110px;
+        height: 30px;
+        margin-left: 2em;
+    }
+
+    .Nav-Iteams-mobile{
+        display: block;
+    }
+
+    .Navbar{
+        width: 100%;
+    }
+
+    .first-main-section-heading{
+        font-size: 2.5em;
+        margin-top: 30px;
+    }
+
+    .box-container{
+        display: block;
+    }
+
+    .box{
+        margin: auto;
+        width: 60%;
+        min-height: 400px;
+        margin-top: 20px;
+    }
+
+    .campus-section{
+        display: block;
+    }
+
+    .campus{
+        margin: auto;
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    .review-section{
+        display: block;
+    }
+
+    .review{
+        margin: auto;
+        width: 80%;
+    }
+
+    .facilties-section{
+        display: block;
+    }
+    .card{
+        margin: auto;
+        width: 55%;
+    }
+
+    .banner-heading{
+        font-size: 2em;
+    }
+
+    .about-section-inner{
+        display: block;
+
+    }
+
+    .about-section-1{
+        width: 100%;
+    }
+    
+    .about-section-2{
+        width: 100%;
+    }
+
+    .blog-section{
+        display: block;
+        margin-top: 40px;
+    }
+
+    .blog-section-1{
+        width: 100%;
+        min-height: 400px;
+    }
+    
+    .blog-section-2{
+        width: 100%;
+        min-height: 400px;
+        padding: 20px;
+    }
+
+    
+}
